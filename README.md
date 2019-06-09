@@ -11,7 +11,7 @@ This Repository is an code example presented in the post of my blog [How to pers
 
 ### Execute
 
-1. Start docker container:
+1. Start docker containers:
  
    `docker-compose up -d`
   
