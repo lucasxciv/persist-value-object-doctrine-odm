@@ -1,6 +1,6 @@
 # Persist Value Object with Doctrine ODM
 
-This Repository is an code example presented in the post of my blog [How to persist Value Object with Doctrine ODM](http://whoami.deoliveiralucas.net/blog/how-to-persist-value-object-with-doctrine-odm).
+This repository is a code example presented in my blog post [How to persist Value Object with Doctrine ODM](http://whoami.deoliveiralucas.net/blog/how-to-persist-value-object-with-doctrine-odm).
 
 ## Running
 
