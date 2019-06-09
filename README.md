@@ -14,15 +14,19 @@ This Repository is an code example presented in the post of my blog [How to pers
 1. Start docker containers:
  
    `docker-compose up -d`
-  
-2. Execute example: 
+ 
+2. Install Composer dependencies:
+
+   `docker exec -it persist-value-object-doctrine-odm-php composer install`
+ 
+3. Execute example: 
 
    `docker exec -it persist-value-object-doctrine-odm-php php bin/run.php`
    
-3. Access MongoDB database: 
+4. Access MongoDB database: 
 
    `docker exec -it persist-value-object-doctrine-odm-mongo mongo test_value_object`
    
-4. Check the result: 
+5. Check the result: 
 
    `db.Product.find().pretty()`
