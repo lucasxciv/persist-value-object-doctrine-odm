@@ -17,8 +17,8 @@
     "require": {
         "alcaeus/mongo-php-adapter": "^1.1",
         "doctrine/mongodb-odm": "^1.2",
-        "rhumsaa/uuid": "^2.8",
-        "beberlei/assert": "^3.2"
+        "beberlei/assert": "^3.2",
+        "ramsey/uuid": "^3.8"
     },
     "config": {
         "platform": {

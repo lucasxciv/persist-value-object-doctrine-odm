@@ -2,15 +2,16 @@
 
 namespace Store;
 
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\UuidInterface;
 
 class IdProduct
 {
 
-    /** @var Uuid */
+    /** @var UuidInterface */
     private $uuid;
 
-    private function __construct(Uuid $uuid)
+    private function __construct(UuidInterface $uuid)
     {
         $this->uuid = $uuid;
     }
