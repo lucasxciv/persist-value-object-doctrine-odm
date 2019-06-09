@@ -1,10 +1,25 @@
 <?php
 
+namespace Store\Type;
 
-namespace Store\Types;
+use Doctrine\ODM\MongoDB\Types\Type;
+use Store\Name;
 
-
-class NameType
+class NameType extends Type
 {
 
+    public function convertToPHPValue($value)
+    {
+        return Name::fromString((string)$value);
+    }
+
+    public function closureToPHP() : string
+    {
+        return '$return = Store\Name::fromString((string)$value);';
+    }
+
+    public function convertToDatabaseValue($value)
+    {
+        return $value->toString();
+    }
 }

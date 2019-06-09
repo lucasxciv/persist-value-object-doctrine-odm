@@ -1,0 +1,18 @@
+version: "3.1"
+services:
+    mongodb:
+      image: mongo:3.6.13
+      container_name: persist-value-object-doctrine-odm-mongo
+      restart: always
+      volumes:
+        - ./data/db/mongo:/data/db
+      ports:
+        - "27020:27017"
+      command: --storageEngine wiredTiger
+
+    php73-cli:
+      build: docker/php
+      container_name: persist-value-object-doctrine-odm-php
+      working_dir: /app
+      volumes:
+        - .:/app

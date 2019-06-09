@@ -1,0 +1,28 @@
+{
+    "name": "deoliveiralucas/persist-value-object-doctrine-odm",
+    "description": "Code example from post about how to persist value object with Doctrine ODM",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas de Oliveira",
+            "email": "contato@deoliveiralucas.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Store\\": "src"
+        }
+    },
+    "require": {
+        "alcaeus/mongo-php-adapter": "^1.1",
+        "doctrine/mongodb-odm": "^1.2",
+        "rhumsaa/uuid": "^2.8",
+        "beberlei/assert": "^3.2"
+    },
+    "config": {
+        "platform": {
+            "ext-mongo": "1.6.16"
+        }
+    }
+}
