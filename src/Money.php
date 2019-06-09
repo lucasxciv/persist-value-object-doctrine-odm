@@ -42,7 +42,7 @@ class Money
 
     public static function USD(float $value) : self
     {
-        Assertion::min($value, 3, 'Money must be positive value');
+        Assertion::min($value, 0, 'Money must be positive value');
 
         return new self($value, static::USD);
     }
