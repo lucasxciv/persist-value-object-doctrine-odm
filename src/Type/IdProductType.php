@@ -3,7 +3,7 @@
 namespace Store\Type;
 
 use Doctrine\ODM\MongoDB\Types\Type;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 use Store\IdProduct;
 
 class IdProductType extends Type
@@ -16,7 +16,7 @@ class IdProductType extends Type
 
     public function closureToPHP() : string
     {
-        return '$return = Rhumsaa\Uuid\Uuid::fromString((string)$value);';
+        return '$return = Ramsey\Uuid\Uuid::fromString((string)$value);';
     }
 
     public function convertToDatabaseValue($value)
